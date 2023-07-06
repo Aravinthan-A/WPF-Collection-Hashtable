@@ -1,0 +1,35 @@
+﻿<Window x:Class="String_Function.Hash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:String_Function"
+        xmlns:value="clr-namespace:String_Function"
+        mc:Ignorable="d"
+        Title="Hash" Height="450" Width="800" Background="Aqua">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
+            <Label Content="{x:Static value:Resource.name}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtname"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Label Content="{x:Static value:Resource.clg}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtclg"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Label Content="{x:Static value:Resource.mark}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtmark1"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Label Content="{x:Static value:Resource.mark2}" Width="80" FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txtmark2"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,20,0">
+            <Label Content="{x:Static value:Resource.total}" Width="100"  FontSize="16"></Label>
+            <TextBox Width="200" x:Name="txttotal" ></TextBox>
+        </StackPanel>
+        <ComboBox Width="200" x:Name="cmbname" Margin="80,30,0,0"></ComboBox>
+        <Button Content="{x:Static value:Resource.click}" Width="100" Background="Red" Foreground="White" Margin="0,30,0,0" Click="Button_Click"></Button>
+        <Button Content="{x:Static value:Resource.click}" Width="100" Background="Red" Foreground="White" Margin="0,10,0,0" Click="Button_Click_1" ></Button>
+    </StackPanel>
+</Window>
